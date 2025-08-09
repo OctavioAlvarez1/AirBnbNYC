@@ -85,5 +85,5 @@ El dashboard incluye:
 ---
 
 ## 👤 Autor
-Octavio Alvarez
-LinkedIn
+Octavio Alvarez - Data Engineer
+
