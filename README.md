@@ -28,12 +28,7 @@ La solución implementa un flujo de datos **end-to-end** utilizando **AWS S3** p
 ---
 ## 📂 Estructura del Proyecto
 
-Notebook Tableau Project/
-│── Dashboard/ # Archivo .twbx o .twb de Tableau y capturas
-│── Datasets/ # Dataset original y transformado
-│── Imagenes/ # Pipeline y visualizaciones
-│── Queries/ # Consultas SQL en Athena
-│── README.md # Documentación del proyecto
+<img src="Imagenes/estructura.png" alt="Descripción de la imagen" width="600">
 
 ---
 
