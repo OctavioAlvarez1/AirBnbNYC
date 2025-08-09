@@ -17,7 +17,8 @@ La solución implementa un flujo de datos **end-to-end** utilizando **AWS S3** p
 
 ## 🚀 Pipeline del Proyecto
 
-![Pipeline](Imagenes/Pipeline.png)
+<img src="Imagenes/Pipeline.png" alt="Descripción de la imagen" width="600">
+
 
 1. **Dataset CSV (local)** → Archivo histórico de ventas de notebooks.
 2. **AWS S3** → Carga del dataset a un bucket para almacenamiento seguro.
@@ -41,19 +42,12 @@ Notebook Tableau Project/
 Todas las consultas están en la carpeta **`Queries/`**.  
 Ejemplo: *Top 5 marcas por ingresos totales*  
 
-```sql
-SELECT
-    marca,
-    SUM(ingreso_total) AS total_ingreso
-FROM ventas_notebooks
-GROUP BY marca
-ORDER BY total_ingreso DESC
-LIMIT 5;
-
+<img src="Imagenes/consulta.png" alt="Descripción de la imagen" width="600">
 ---
+
 ## 📊 Visualizaciones del Dashboard
 
-![Dashboard](Dashboard/dashboard.png)
+<img src="Imagenes/dashboard.png" alt="Descripción de la imagen" width="600">
 
 El dashboard incluye:
 
