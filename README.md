@@ -42,7 +42,7 @@ Ejemplo: *Top 5 marcas por ingresos totales*
 
 ## 📊 Visualizaciones del Dashboard
 
-<img src="Imagenes/dashboard.png" alt="Descripción de la imagen" width="600">
+<img src="Imagenes/dashboard.png" alt="Descripción de la imagen" width="800">
 
 El dashboard incluye:
 
