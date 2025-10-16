@@ -66,17 +66,7 @@ Ejemplo: *Top 5 marcas por ingresos totales*
 ## 🔁 Incrementalidad & Idempotencia
 En producción, el pipeline está preparado para ejecutar cargas incrementales e idempotentes.
 
--- Incrementalidad: traer solo datos nuevos
-CREATE OR REPLACE TABLE bronze_sales AS
-SELECT * FROM raw_sales
-WHERE ingestion_date > (SELECT MAX(ingestion_date) FROM bronze_sales);
-
--- Idempotencia: UPSERT / MERGE
-MERGE INTO silver_sales t
-USING bronze_sales s
-ON t.id_venta = s.id_venta
-WHEN MATCHED THEN UPDATE SET t.revenue_usd = s.revenue_usd
-WHEN NOT MATCHED THEN INSERT VALUES (s.id_venta, s.brand, s.region, s.year, s.revenue_usd);
+<img src="Imagenes/consulta2.png" alt="Descripción de la imagen" width="600">
 
 ✅ Esto garantiza que el resultado final sea consistente aunque el proceso se ejecute varias veces.
 
